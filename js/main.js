@@ -1,6 +1,6 @@
-var el = document.getElementById('box')
-var i = 0
-var a = setInterval(move, 10)
+const el = document.getElementById('box')
+let i = 0
+const a = setInterval(move, 10)
 
 function move() {
   if (i < 150) {
