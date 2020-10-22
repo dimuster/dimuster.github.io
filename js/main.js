@@ -1,12 +1,12 @@
-var el = document.getElementById('box')
-var i = 0
-var a = setInterval(move, 10)
+let pos = 0
+const box = document.getElementById('box')
+const t = setInterval(move, 10)
 
 function move() {
-  if (i < 150) {
-    el.style.left = i + "px;"
-    i++
+  if (pos >= 150) {
+     clearInterval(t)
   } else {
-    clearInterval(a)
+    pos++
+    box.style.left = pos + 'px'
   }
 }
