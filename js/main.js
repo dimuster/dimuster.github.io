@@ -4,7 +4,7 @@ const a = setInterval(move, 10)
 
 function move() {
   if (i < 150) {
-    el.style.left = i + "px;"
+    el.style.left = i + "px"
     i++
   } else {
     clearInterval(a)
